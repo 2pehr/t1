@@ -20,7 +20,6 @@ const ExpensesChart = (props) => {
 
     chartDataPoints[expenseMonth].value += expense.amount;
   }
-  if(chartDataPoints.value == null ) return null;
-  else return <Chart dataPoints={chartDataPoints}/>;
+  return <Chart dataPoints={chartDataPoints}/>;
 };
 export default ExpensesChart;
